@@ -48,6 +48,10 @@ fun printHello(name: String?): Unit{
 		println("Hi there!")
 }
 
+infix fun Int.shl(x: Int): Int {
+	return x
+}
+
 // main
 fun main(){
 	println("Hello World!")
@@ -77,6 +81,6 @@ fun main(){
 	printHello("Kate")
 	printHello(null)
 	
-	
+	print(3.shl(3))
 }
 
